@@ -1,26 +1,44 @@
+@font-face {
+    font-family: 'CustomIcons';
+    src: url('ruta/a/la/fuente/custom-icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 body {
     background: linear-gradient(to bottom, #Fd287d, #ff5864, #FF655b);
     font-family: Arial, sans-serif;
     color: #f9fdfd;
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align:center;
 }
 
-.main {
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    background-color: #ffffff; 
+    z-index: 999; 
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-    position: relative;
-    z-index: 1;
 }
 
 .mobile-menu {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 80%;
+    width: 20%;
     height: 100vh;
     transition: left 0.3s;
     z-index: 2;
+    background-color: #fff;
+    display: none;
+    z-index: 999
 }
 
 .mobile-menu ul {
@@ -60,13 +78,39 @@ body {
 
 .menu {
     text-align: left;
+
 }
 
 .container,
 .menu,
 .content {
-    box-shadow: none;
-    background: transparent;
+    box-shadow: none 
+}
+.material-symbols-outlined {
+    font-family: 'MaterialSymbolsOutlined', sans-serif;
+    font-size: 24px; /* Tamaño de fuente personalizado */
+    /* Otros estilos específicos para tu fuente personalizada */
+}
+p i {
+    font-size: 24px; /* Ajusta el tamaño de los iconos según tus preferencias */
+    margin: 0 10px; /* Agrega margen entre los iconos horizontalmente */
+}
+
+.slider {
+    position: fixed;
+    top: 50%; /* Lo posiciona verticalmente en el centro */
+    left: 50%; /* Lo posiciona horizontalmente en el centro */
+    transform: translate(-50%, -10%); /* Ajusta el centrado */
+    width: 500px; /* Ancho deseado para el carrusel */
+    height: 200%; /* Ajusta la altura según tus necesidades */
+    background-color: white; /* Fondo blanco para el marco polaroid */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para el marco polaroid */
+    padding: 20px; /* Espacio dentro del marco polaroid */
+}
+.slider img {
+    max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
+    display: block; /* Elimina los espacios en blanco debajo de las imágenes */
+    margin-bottom: 10px; /* Espacio entre las imágenes */
 }
 
 .button {
@@ -80,12 +124,9 @@ body {
 
 a {
     text-decoration: none;
-    color: #007bff;
+    color: #ff69c1;
 }
 
-.button:hover {
-    background-color: #ff4081;
-}
 
 a:hover {
     text-decoration: underline;
@@ -100,7 +141,7 @@ h2 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -155,22 +196,11 @@ input[type="submit"]:hover {
     background-color: #005cbf;
 }
 
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-}
 
 .item {
     text-align: center;
 }
 
-.item img {
-    max-width: 90%;
-    height: auto;
-    display: block;
-    width: 90%;
-}
 
 .item p {
     font-size: 16px;
