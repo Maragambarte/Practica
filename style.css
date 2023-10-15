@@ -112,6 +112,18 @@ p i {
     display: block; /* Elimina los espacios en blanco debajo de las imágenes */
     margin-bottom: 10px; /* Espacio entre las imágenes */
 }
+.polaroid-card {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espacio dentro del marco polaroid */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para el marco polaroid */
+}
+
+.bio-description {
+    text-align: center; /* Centra el texto */
+    margin-top: 10px; /* Espacio entre la imagen y la descripción */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
 
 .button {
     background-color: #ff69b4;
