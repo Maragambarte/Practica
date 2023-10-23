@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos para Perritos</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="tu-archivo-js.js">
+    <link rel="icon" type="imagenes/logo.jpg" href="imagenes/logo.jpg">
+
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a la Tienda de Productos +COTAS</h1>
+    </header>
+    
+    <div class="products">
+        <div class="product">
+            <img src="imagenes/platito.jpg" alt="Platito para Perrito">
+            <h2>Platito para Perrito</h2>
+            <p>Precio: $10.00</p>
+            <button onclick="agregarAlCarrito('platito')">Agregar al carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/camas.jpg" alt="Camita para Perrito">
+            <h2>Camita para Perrito</h2>
+            <p>Precio: $20.00</p>
+            <button onclick="agregarAlCarrito('camita')">Agregar al carrito</button>
+        </div>
+
+        <div class="product">
+            <img src="imagenes/collar.jpg" alt="Collar para Perrito">
+            <h2>Collar para Perrito</h2>
+            <p>Precio: $5.00</p>
+            <button onclick="agregarAlCarrito('collar')">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito">
+            <!-- Los productos seleccionados se mostrarán aquí -->
+        </ul>
+        <p>Total: $<span id="total">0.00</span></p>
+        <button onclick="realizarCompra()">Realizar Compra</button>
+    </div>
+
+    <script src="tu-archivo-js.js"></script> <!-- Enlaza tu archivo JavaScript aquí -->
+    <footer>
+        <div class="col-s-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-s-3 icon footer">
+                        <img alt="iinstagram" src="imagenes/instagram.png" height="35">
+                    </div>
+                    <div class="col-s-3 icon footer">
+                        <img alt="ifacebook" src="imagenes/facebook.png" height="35">
+                    </div>
+                    <div class="col-s-3 icon footer">
+                        <img alt="itwtter" src="imagenes/twitter.png" height="35">
+                    </div>
+                    <div class="col-s-3 icon footer">
+                        <img alt="itic-toc" src="imagenes/tik-tok.png" height="35">
+                    </div>
+                </div>
+                <div><p>&COPY;+cotas</p></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
