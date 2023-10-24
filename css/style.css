@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'CustomIcons';
+    src: url('ruta/a/la/fuente/custom-icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    background: linear-gradient(to bottom, #Fd287d, #ff5864, #FF655b);
+    font-family: Arial, sans-serif;
+    color: #f9fdfd;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    background-color: #ffffff; 
+    z-index: 999; 
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 20%;
+    height: 100vh;
+    transition: left 0.3s;
+    z-index: 2;
+    background-color: #fff;
+    display: none;
+    z-index: 999
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu-item .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.mobile-menu li {
+    margin: 10px 0;
+}
+
+.page-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu {
+    text-align: left;
+
+}
+
+.container,
+.menu,
+.content {
+    box-shadow: none 
+}
+.material-symbols-outlined {
+    font-family: 'MaterialSymbolsOutlined', sans-serif;
+    font-size: 24px; /* Tamaño de fuente personalizado */
+    /* Otros estilos específicos para tu fuente personalizada */
+}
+p i {
+    font-size: 24px; /* Ajusta el tamaño de los iconos según tus preferencias */
+    margin: 0 10px; /* Agrega margen entre los iconos horizontalmente */
+}
+
+.slider {
+    position: fixed;
+    top: 120%; /* Lo posiciona verticalmente en el centro */
+    left: 120%; /* Lo posiciona horizontalmente en el centro */
+    transform: translate(-50%, -10%); /* Ajusta el centrado */
+    width: 500px; /* Ancho deseado para el carrusel */
+    height: 200%; /* Ajusta la altura según tus necesidades */
+    background-color: white; /* Fondo blanco para el marco polaroid */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para el marco polaroid */
+    padding: 20px; /* Espacio dentro del marco polaroid */
+}
+.slider img {
+    max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
+    display: block; /* Elimina los espacios en blanco debajo de las imágenes */
+    margin-bottom: 10px;
+    
+}
+.polaroid-card {
+    background-color: white; /* Fondo blanco */
+    padding: 20px; /* Espacio dentro del marco polaroid */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para el marco polaroid */
+}
+
+.bio-description {
+    text-align: center; /* Centra el texto */
+    margin-top: 10px; /* Espacio entre la imagen y la descripción */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
+
+.button {
+    background-color: #ff69b4;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #ff69c1;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+    position: fixed;
+    top: 120%; 
+        left: 120%; 
+   
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+p1 {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #BFC9CA;
+    font-weight: bold;
+}
+
+form {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #0078d4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #005cbf;
+}
+
+
+.item {
+    text-align: center;
+}
+
+
+.item p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+footer {
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+  
+}
+
+.icon.footer {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icon.footer img {
+    vertical-align: middle;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+.product-list {
+    list-style: none;
+    padding: 0;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-name {
+    flex: 1;
+    font-weight: bold;
+}
+
+.product-price {
+    flex: 1;
+    text-align: right;
+    color: #ff69b4;
+}
+
+#carrito {
+    list-style: none;
+    padding: 0;
+}
+
+#carrito li {
+    margin-bottom: 5px;
+}
+
+#total {
+    font-weight: bold;
+}
+
+
+button {
+    background-color: #ff69b4;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4081;
+}
+
+
+#comprar-btn {
+    background-color: #0078d4;
+}
+
+#comprar-btn:hover {
+    background-color: #005cbf;
+}
