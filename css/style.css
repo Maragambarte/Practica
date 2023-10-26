@@ -22,8 +22,7 @@ body {
     top: 0;
     left: 0;
     width: 25%;
-    background-color: #ffffff; 
-    z-index: 999; 
+     z-index: 999; 
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
@@ -81,6 +80,12 @@ body {
     text-align: left;
 
 }
+.video-link::before {
+    content: "\f03d"; 
+    font-family: FontAwesome; 
+    margin-right: 05px;
+}
+
 #menu li:hover .submenu {
     display: block;
 }
@@ -91,44 +96,44 @@ body {
     box-shadow: none 
 }
 label {
-    color: #e4e3e3; /
+    color: rgb(252, 247, 247); /
   }
   
   
   input[type="text"],
   input[type="email"] {
-    color: #ff0062; /* Color verde (#00ff00) como ejemplo */
+    color: #030001; 
   }
   
-  /* Cambiar el color del texto del botón */
+  
   button {
-    color: #0000ff; /* Color azul (#0000ff) como ejemplo */
+    color: #0000ff; 
   }
   
 .material-symbols-outlined {
     font-family: 'MaterialSymbolsOutlined', sans-serif;
-    font-size: 24px; /* Tamaño de fuente personalizado */
-    /* Otros estilos específicos para tu fuente personalizada */
+    font-size: 24px; 
+   
 }
 p i {
-    font-size: 24px; /* Ajusta el tamaño de los iconos según tus preferencias */
-    margin: 0 10px; /* Agrega margen entre los iconos horizontalmente */
+    font-size: 24px; 
+    margin: 0 10px;
 }
 
 .slider {
     position: center;
-    top: 50; /* Lo posiciona verticalmente en el centro */
-    left: 50%; /* Lo posiciona horizontalmente en el centro */
-    transform: translate(-50%, -10%); /* Ajusta el centrado */
-    width: 500px; /* Ancho deseado para el carrusel */
-    height: 200%; /* Ajusta la altura según tus necesidades */
-    background-color: rgb(8, 0, 0); /* Fondo blanco para el marco polaroid */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para el marco polaroid */
-    padding: 20px; /* Espacio dentro del marco polaroid */
+    top: 31; 
+    left: 31%; /
+    transform: translate(-50%, -10%); 
+    width: 500px; 
+    height: 200%; 
+    background-color: rgb(8, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
 }
 .slider img {
-    max-width: 100%; /* Ajusta el tamaño máximo de las imágenes */
-    display: block; /* Elimina los espacios en blanco debajo de las imágenes */
+    max-width: 100%; 
+    display: block; 
     margin-bottom: 10px;
     
 }
@@ -139,10 +144,10 @@ p i {
 }
 
 .bio-description {
-    text-align: center; /* Centra el texto */
-    margin-top: 10px; /* Espacio entre la imagen y la descripción */
-    font-size: 16px; /* Tamaño de fuente */
-    color: #f1f1f11f16e6; /* Color del texto */
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px; 
+    color: #f1f1f11f16e6; /
 }
 
 .button {
@@ -156,7 +161,7 @@ p i {
 
 a {
     text-decoration: none;
-    color: #ff69c1;
+    color: #0e0108;
 }
 
 
