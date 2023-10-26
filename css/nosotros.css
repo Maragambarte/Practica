@@ -1,0 +1,34 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.paragraph {
+    text-align: left;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.paragraph p2 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    text-align: center; /* Texto centrado */
+    background-color: #f44336; /* Fondo de color */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interior */
+    border-radius: 5px; /* Borde redondeado */
+}
+
+.paragraph p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+    text-align: justify; /* Alineación justificada */
+    line-height: 1.5; /* Espaciado entre líneas */
+}

@@ -16,6 +16,7 @@ body {
     text-align:center;
 }
 
+
 .menu {
     position: fixed;
     top: 0;
@@ -80,12 +81,30 @@ body {
     text-align: left;
 
 }
+#menu li:hover .submenu {
+    display: block;
+}
 
 .container,
 .menu,
 .content {
     box-shadow: none 
 }
+label {
+    color: #e4e3e3; /
+  }
+  
+  
+  input[type="text"],
+  input[type="email"] {
+    color: #ff0062; /* Color verde (#00ff00) como ejemplo */
+  }
+  
+  /* Cambiar el color del texto del botón */
+  button {
+    color: #0000ff; /* Color azul (#0000ff) como ejemplo */
+  }
+  
 .material-symbols-outlined {
     font-family: 'MaterialSymbolsOutlined', sans-serif;
     font-size: 24px; /* Tamaño de fuente personalizado */
@@ -97,13 +116,13 @@ p i {
 }
 
 .slider {
-    position: fixed;
-    top: 120%; /* Lo posiciona verticalmente en el centro */
-    left: 120%; /* Lo posiciona horizontalmente en el centro */
+    position: center;
+    top: 50; /* Lo posiciona verticalmente en el centro */
+    left: 50%; /* Lo posiciona horizontalmente en el centro */
     transform: translate(-50%, -10%); /* Ajusta el centrado */
     width: 500px; /* Ancho deseado para el carrusel */
     height: 200%; /* Ajusta la altura según tus necesidades */
-    background-color: white; /* Fondo blanco para el marco polaroid */
+    background-color: rgb(8, 0, 0); /* Fondo blanco para el marco polaroid */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para el marco polaroid */
     padding: 20px; /* Espacio dentro del marco polaroid */
 }
@@ -114,16 +133,16 @@ p i {
     
 }
 .polaroid-card {
-    background-color: white; /* Fondo blanco */
-    padding: 20px; /* Espacio dentro del marco polaroid */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para el marco polaroid */
+    background-color: rgb(14, 1, 1); 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .bio-description {
     text-align: center; /* Centra el texto */
     margin-top: 10px; /* Espacio entre la imagen y la descripción */
     font-size: 16px; /* Tamaño de fuente */
-    color: #333; /* Color del texto */
+    color: #f1f1f11f16e6; /* Color del texto */
 }
 
 .button {
@@ -169,12 +188,12 @@ p1 {
 }
 
 form {
-    background-color: #fff;
+    background-color: #050101;
     max-width: 600px;
     margin: 0 auto;
     padding: 30px;
     border-radius: 30px;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1px rgba(248, 246, 246, 0.1);
 }
 
 label {
@@ -227,16 +246,19 @@ footer {
     color: #fff;
     padding: 50px;
     text-align: center;
-  
+    
+   
 }
 
 .icon.footer {
     display: inline-block;
     margin-right: 10px;
+ 
 }
 
 .icon.footer img {
     vertical-align: middle;
+    
 }
 
 
