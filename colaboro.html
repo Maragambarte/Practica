@@ -3,53 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Productos para Perritos</title>
+    <script src="tu-archivo-js.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tienda.css">
-    <link rel="stylesheet" href="tu-archivo-js.js">
     <link rel="icon" type="imagenes/logo.jpg" href="imagenes/logo.jpg">
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .page-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .menu {
-            text-align: left;
-            padding: 10px;
-        }
-
-        .menu img {
-            display: block;
-            margin: 0 auto;
-        }
-
-        .products {
-            text-align: center;
-        }
-
-        .product {
-            text-align: center;
-            margin: 20px;
-        }
-
-        .cart {
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+    <title>Formulario de Contacto para Colaborar con el Refugio</title>
 </head>
 <body>
-    <header>
-        <h1>Tienda de Productos +COTAS</h1>
-    </header>
     <div class="page-container">
         <div class="container">
         <div class="row">
@@ -59,50 +18,42 @@
                         <ul id="menu">
                             <li><a href="index.html" class="active">Inicio</a></li>
                             <li><a href="nosotros.html" class="active">Conocenos</a></li>
+                            <li><a href="tienda.html" class="active">Tienda</a></li>
                             <li><a href="familias.html" class="active">Nuestas Familias</a></li>
                             <li><a href="contacto.html" class="active">Contacto</a></li>
                             <ul class="submenu">
-                                <li><a href="colaboro.html">Queres colaborar con el refu?</a></li>
                                 <li><a href="adopta.html">Adopta uno de nuestros callejeros</a></li>
                                 <li><a href="transito.html">Dale transito , un hogar para esperar</a></li>
                             </ul>
                         </ul>
                     </div>
                     <div class="col-m-10 col-l-7"></div>
+                       
+    <h1>Colabora con el Refugio</h1>
     
-    <div class="products">
-        <div class="product">
-            <img src="imagenes/platito.jpg" alt="Platito para Perrito">
-            <h2>Platito para Perrito</h2>
-            <p>Precio: $10.00</p>
-            <button onclick="agregarAlCarrito('platito')">Agregar al carrito</button>
-        </div>
 
-        <div class="product">
-            <img src="imagenes/camas.jpg" alt="Camita para Perrito">
-            <h2>Camita para Perrito</h2>
-            <p>Precio: $20.00</p>
-            <button onclick="agregarAlCarrito('camita')">Agregar al carrito</button>
-        </div>
+    <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-        <div class="product">
-            <img src="imagenes/collar.jpg" alt="Collar para Perrito">
-            <h2>Collar para Perrito</h2>
-            <p>Precio: $5.00</p>
-            <button onclick="agregarAlCarrito('collar')">Agregar al carrito</button>
-        </div>
-    </div>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
 
-    <div class="cart">
-        <h2>Carrito de Compras</h2>
-        <ul id="carrito">
-            <!-- Los productos seleccionados se mostrarán aquí -->
-        </ul>
-        <p>Total: $<span id="total">0.00</span></p>
-        <button onclick="realizarCompra()">Realizar Compra</button>
-    </div>
+        <label for="telefono">Teléfono de contacto:</label>
+        <input type="tel" id="telefono" name="telefono" required>
 
-    <script src="tu-archivo-js.js"></script> <!-- Enlaza tu archivo JavaScript aquí -->
+        <label for="colaboracion">Tipo de colaboración deseada:</label>
+        <select id="colaboracion" name="colaboracion" required>
+            <option value="trabajo_voluntario">Trabajo Voluntario</option>
+            <option value="donacion_economica">Donación Económica</option>
+        </select>
+
+        <label for="mensaje">Mensaje o comentarios adicionales:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <button type="submit">Enviar Solicitud de Colaboración</button>
+    </form>
+    <p>Complete este formulario si desea colaborar con nuestro refugio a través de trabajo voluntario o donaciones económicas. Agradecemos su interés en apoyar nuestra causa.</p>
     <footer>
         <div class="col-s-12">
             <div class="container">
