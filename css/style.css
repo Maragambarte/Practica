@@ -8,8 +8,9 @@
     
     @media only screen and (max-width: 600px) {
     .mi-texto {
-        font-size: 14px; /* Tamaño de fuente más pequeño para dispositivos móviles */
-        color: #666; /* Puedes ajustar el color del texto si es necesario */
+        font-size: 14px; 
+        color: #666;
+        video: width="30" height="30" 
     }
 }
     
