@@ -59,9 +59,6 @@ function actualizarCarrito() {
         const li = document.createElement("li");
         li.textContent = producto;
         carritoList.appendChild(li);
-
-        // Calcula el precio total simulado
-        // Puedes personalizar esto con los precios reales de tus productos
         total += calcularPrecio(producto);
     }
 
@@ -69,9 +66,8 @@ function actualizarCarrito() {
     totalElement.textContent = total.toFixed(2);
 }
 
-// Función para calcular el precio de un producto (simulado)
+
 function calcularPrecio(producto) {
-    // Simulación de precios para productos
     const precios = {
         platito: 10.00,
         camita: 20.00,
@@ -81,13 +77,12 @@ function calcularPrecio(producto) {
     return precios[producto] || 0;
 }
 
-// Función para realizar una compra (simulada)
 function realizarCompra() {
     if (carrito.length === 0) {
         alert("El carrito está vacío. Agrega productos antes de realizar una compra.");
     } else {
         alert("¡Compra realizada con éxito! Gracias por elegir nuestros productos.");
-        carrito.length = 0; // Vacía el carrito después de la compra
+        carrito.length = 0; 
         actualizarCarrito();
     }
 }
